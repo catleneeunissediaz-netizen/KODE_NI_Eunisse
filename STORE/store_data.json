@@ -1,0 +1,77 @@
+{
+    "branches": {
+        "main_branch": {
+            "name": "Main Branch",
+            "location": "Quezon City",
+            "inventory": {
+                "Coke Original": {
+                    "price": 20.0,
+                    "stock": 40,
+                    "restock_level": 5
+                },
+                "Pancit Canton": {
+                    "price": 15.0,
+                    "stock": 3,
+                    "restock_level": 5
+                },
+                "Piatos": {
+                    "price": 15.0,
+                    "stock": 20,
+                    "restock_level": 5
+                }
+            }
+        },
+        "antipolo_branch": {
+            "name": "Antipolo Branch",
+            "location": "Antipolo",
+            "inventory": {}
+        },
+        "branch_3": {
+            "name": "Branch 3",
+            "location": "Baguio City",
+            "inventory": {
+                "Coke": {
+                    "price": 150.0,
+                    "stock": 200,
+                    "restock_level": 50
+                }
+            }
+        }
+    },
+    "transactions": [
+        {
+            "txn_id": 1,
+            "branch_id": "main_branch",
+            "branch_name": "Main Branch",
+            "items": [
+                {
+                    "name": "Piatos",
+                    "qty": 10,
+                    "price": 15.0,
+                    "subtotal": 150.0
+                }
+            ],
+            "total": 150.0
+        },
+        {
+            "txn_id": 2,
+            "branch_id": "main_branch",
+            "branch_name": "Main Branch",
+            "items": [
+                {
+                    "name": "Coke Original",
+                    "qty": 10,
+                    "price": 20.0,
+                    "subtotal": 200.0
+                },
+                {
+                    "name": "Pancit Canton",
+                    "qty": 1,
+                    "price": 15.0,
+                    "subtotal": 15.0
+                }
+            ],
+            "total": 215.0
+        }
+    ]
+}
